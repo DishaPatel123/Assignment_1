@@ -1,0 +1,77 @@
+<!--Assignment:1,   Disha Patel, 301149367, 14th-feb-2021-->
+  
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/font-awesome/css/font-awesome.min.css">
+    
+    <link rel='stylesheet' href='/Content/app.css' /> 
+
+ 
+  </head>
+  <body>
+
+<div id="wrapper" class="active">  
+    <!-- Sidebar -->
+            <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+          <!-- <li class="  sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li> -->
+        </ul>
+        <ul class="sidebar-nav" id="sidebar">
+          <li><a class="well lead"> <img src="img/disha_logo.png" class="img-responsive" alt="Cinque Terre" width="304" height="236">   </a></li>
+           <ul class="sidebar-nav" id="sidebar">
+            
+             <% if(title == "Home") { %>
+            <li  class="active"><a href="/" class="active"><i class="fa fa-home fa-lg">  Home  </i></a></li>
+            <li ><a href="/about"> <i class="fa fa-info fa-lg">   About  </i></a></li>
+            <li ><a href="/projects"> <i class="fa fa-gear fa-lg">  Projects  </i></a></li>
+            <li ><a href="/services"><i class="fa fa-map fa-lg">  Services  </i></a></li>
+            <li ><a href="/contact"><i class="fa fa-phone fa-lg">  Contact  </i></a></li>
+           
+            
+       <% } else if(title == "About") {  %>
+            <li ><a href="/"><i class="fa fa-home fa-lg">  Home </i></a></li>
+            <li  class="active"><a href="/about"><i class="fa fa-info fa-lg">  About</i></a></li>
+            <li ><a href="/projects"> <i class="fa fa-gear fa-lg">  Projects</i></a></li>
+            <li ><a href="/services"><i class="fa fa-map fa-lg">  Services</i></a></li>
+            <li ><a href="/contact"><i class="fa fa-phone fa-lg">  Contact</i></a></li>
+            
+
+        <% } else if(title == "Projects") {  %>
+            <li ><a href="/"><i class="fa fa-home fa-lg">  Home</i></a></li>
+            <li ><a href="/about"><i class="fa fa-info fa-lg">  About</i></a></li>
+            <li  class="active"><a href="/projects"><i class="fa fa-gear fa-lg">  Projects</i></a></li>
+            <li ><a href="/services"><i class="fa fa-map fa-lg">  Services</i></a></li>
+            <li ><a href="/contact"><i class="fa fa-phone fa-lg">  Contact</i></a></li>
+           
+ 
+
+        <% } else if(title == "Services") {  %>
+            <li ><a href="/"><i class="fa fa-home fa-lg">  Home</i></a></li>
+            <li ><a href="/about"><i class="fa fa-info fa-lg">  About</i></a></li>
+            <li ><a href="/projects"><i class="fa fa-gear fa-lg">  Projects</i></a></li>
+            <li  class="active"><a href="/services"><i class="fa fa-map fa-lg">  Services</i></a></li>
+            <li ><a href="/contact"><i class="fa fa-phone fa-lg">  Contact</i></a></li>
+           
+
+        <% } else if(title == "Contact") {  %>
+            <li ><a href="/"><i class="fa fa-home fa-lg">  Home</i></a></li>
+            <li ><a href="/about"><i class="fa fa-info fa-lg">  About</i></a></li>
+            <li ><a href="/project"><i class="fa fa-gear fa-lg">  Projects</i></a></li>
+            <li ><a href="/services"><i class="fa fa-map fa-lg">  Services</i></a></li>
+            <li  class="active"><a href="/contact"><i class="fa fa-phone fa-lg">  Contact</i></a></li>
+           
+        <% } %>
+
+               
+           </ul>
+          
+        </ul>
+      </div>
